@@ -28,39 +28,40 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
                 ),
               ),
               child: Container(
-                  padding: EdgeInsets.only(top: 90, left: 20),
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        RichText(
-                          text: TextSpan(
-                            text: "Welcome",
+                padding: EdgeInsets.only(top: 90, left: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    RichText(
+                      text: TextSpan(
+                        text: "Welcome",
+                        style: TextStyle(
+                            letterSpacing: 1.0,
+                            fontSize: 25,
+                            color: Colors.white),
+                        children: [
+                          TextSpan(
+                            text: " to EOS chat",
                             style: TextStyle(
-                                letterSpacing: 1.0,
-                                fontSize: 25,
-                                color: Colors.white),
-                            children: [
-                              TextSpan(
-                                text: " to EOS chat",
-                                style: TextStyle(
-                                  letterSpacing: 1.0,
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Text(
-                          "Signup to continue",
-                          style: TextStyle(
-                              letterSpacing: 1.0, color: Colors.white),
-                        ),
-                      ])),
+                              letterSpacing: 1.0,
+                              fontSize: 25,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5.0,
+                    ),
+                    Text(
+                      "Signup to continue",
+                      style: TextStyle(letterSpacing: 1.0, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
           Positioned(
